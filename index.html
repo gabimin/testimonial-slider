@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Testimonial Slider - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+    <h1>Customer Reviews</h1>
+    <div class="review-box">
+        <div id="slide">
+            <div class="card">
+               <div class="profile">
+                   <img src="images/pic1.jpg">
+                   <div>
+                       <h3>Maria Oliver</h3>
+                        <p>Web Designer</p>
+                   </div>
+               </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, pharetra volutpat euismod molestie luctus congue ultricies mi, tempor potenti condimentum facilisis penatibus curabitur. Parturient aptent sociis imperdiet ad porta pharetra hendrerit id lectus aliquam.</p>
+            </div>
+            <div class="card">
+               <div class="profile">
+                   <img src="images/pic2.jpg">
+                   <div>
+                       <h3>Stella McCurry</h3>
+                        <p>UI/UX Designer</p>
+                   </div>
+               </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, pharetra volutpat euismod molestie luctus congue ultricies mi, tempor potenti condimentum facilisis penatibus curabitur. Parturient aptent sociis imperdiet ad porta pharetra hendrerit id lectus aliquam.</p>
+            </div>
+            <div class="card">
+               <div class="profile">
+                   <img src="images/pic3.jpg">
+                   <div>
+                       <h3>Merlina Nuyen</h3>
+                        <p>Senior Developer</p>
+                   </div>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, pharetra volutpat euismod molestie luctus congue ultricies mi, tempor potenti condimentum facilisis penatibus curabitur. Parturient aptent sociis imperdiet ad porta pharetra hendrerit id lectus aliquam, interdum tincidunt ultrices taciti suspendisse varius nec curabitur vestibulum facilisi dignissim.</p>
+            </div>
+            <div class="card">
+               <div class="profile">
+                   <img src="images/pic4.jpg">
+                   <div>
+                       <h3>Karina Williams</h3>
+                        <p>Team Lead</p>
+                   </div>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, pharetra volutpat euismod molestie luctus congue ultricies mi, tempor potenti condimentum facilisis penatibus curabitur. Parturient aptent sociis imperdiet ad porta pharetra hendrerit id lectus aliquam, interdum tincidunt ultrices taciti.</p>
+            </div>
+            
+        </div>
+        
+        <div class="sidebar">
+            <img src="images/up-arrow.png" id="upArrow">
+            <img src="images/down-arrow.png" id="downArrow">
+        </div>
+        
+    </div>
+</div>
+
+
+<script>
+    var slide = document.getElementById("slide");
+    var upArrow = document.getElementById("upArrow");
+    var downArrow = document.getElementById("downArrow");
+    
+    let x = 0;
+    
+    downArrow.onclick = function(){
+        if(x > "-900"){
+            x = x - 300;
+            slide.style.top = x + "px";
+        }
+        
+    }
+    upArrow.onclick = function(){
+        if(x < 0){
+            x = x + 300;
+            slide.style.top = x + "px";
+        }
+        
+    }
+    
+    
+</script>
+
+
+
+</body>
+</html>
